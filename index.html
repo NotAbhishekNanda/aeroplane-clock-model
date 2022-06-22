@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Clock - Abhishek_Design✈️🕑</title>
+	<link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+	<div id="time">
+		<span id="timeHour"></span>
+		<span id="col1">:</span>
+		<span id="timeMin"></span>
+		<span id="col2">:</span>
+		<span id="timeSeconds"></span>
+		<span id="col3">:</span>
+		<span id="timeMs"></span>
+	</div>
+	<svg viewBox="0 0 200 200">
+		<g id="hour">
+			<path fill="rgba(255,255,255,0.4)" d="M 100 30 A 1 1 90 0 0 100 161 A 1 1 90 0 1 100 44 Z" />
+			<path class="plane" fill="lightgray"
+				d="M 97 37 C 98 39 100 38 103 39 C 108 40 136 41 141 40 C 143 39 144 38 144 37 C 144 36 143 35 141 34 C 136 33 108 34 103 35 C 100 36 98 35 97 37 Z" />
+			<path class="tailR" fill="blue" d="M 99 35 L 105 34 L 101 29 C 100 28 99 28 99 29 Z" />
+			<path class="wingR" fill="blue"
+				d="M 119 33 L 129 33 L 127 31 C 127 31 128 31 128 29 C 128 28 127 28 124 28 L 122 25 C 123 25 123 22 122 22 L 119 22 L 114 16 C 113 15 110 16 110 17 Z" />
+			<path class="tailL" fill="blue" d="M 99 45 C 99 46 100 46 101 45 L 105 40 L 99 39 Z" />
+			<path class="wingL" fill="blue"
+				d="M 119 41 L 110 57 C 110 58 113 59 114 58 L 119 52 L 122 52 C 123 52 123 49 122 49 L 124 46 C 127 46 128 46 128 45 C 128 43 127 43 127 43 L 129 41 Z" />
+		</g>
+		<g id="minute">
+			<path transform="translate(50 50) scale(0.5 0.5)" fill="rgba(255,255,255,0.4)"
+				d="M 100 30 A 1 1 90 0 0 100 161 A 1 1 90 0 1 100 44 Z" />
+			<path class="plane" transform="translate(50 50) scale(0.5 0.5)" fill="lightgray"
+				d="M 97 37 C 98 39 100 38 103 39 C 108 40 136 41 141 40 C 143 39 144 38 144 37 C 144 36 143 35 141 34 C 136 33 108 34 103 35 C 100 36 98 35 97 37 Z" />
+			<path class="tailR" transform="translate(50 50) scale(0.5 0.5)" fill="purple"
+				d="M 99 35 L 105 34 L 101 29 C 100 28 99 28 99 29 Z" />
+			<path class="wingR" transform="translate(50 50) scale(0.5 0.5)" fill="purple"
+				d="M 119 33 L 129 33 L 127 31 C 127 31 128 31 128 29 C 128 28 127 28 124 28 L 122 25 C 123 25 123 22 122 22 L 119 22 L 114 16 C 113 15 110 16 110 17 Z" />
+			<path class="tailL" transform="translate(50 50) scale(0.5 0.5)" fill="purple"
+				d="M 99 45 C 99 46 100 46 101 45 L 105 40 L 99 39 Z" />
+			<path class="wingL" transform="translate(50 50) scale(0.5 0.5)" fill="purple"
+				d="M 119 41 L 110 57 C 110 58 113 59 114 58 L 119 52 L 122 52 C 123 52 123 49 122 49 L 124 46 C 127 46 128 46 128 45 C 128 43 127 43 127 43 L 129 41 Z" />
+		</g>
+		<g id="second">
+			<path transform="translate(75 75) scale(0.25 0.25)" fill="rgba(255,255,255,0.4)"
+				d="M 100 30 A 1 1 90 0 0 100 161 A 1 1 90 0 1 100 44 Z" />
+			<path class="plane" transform="translate(75 75) scale(0.25 0.25)" fill="lightgray"
+				d="M 97 37 C 98 39 100 38 103 39 C 108 40 136 41 141 40 C 143 39 144 38 144 37 C 144 36 143 35 141 34 C 136 33 108 34 103 35 C 100 36 98 35 97 37 Z" />
+			<path class="tailR" transform="translate(75 75) scale(0.25 0.25)" fill="green"
+				d="M 99 35 L 105 34 L 101 29 C 100 28 99 28 99 29 Z" />
+			<path class="wingR" transform="translate(75 75) scale(0.25 0.25)" fill="green"
+				d="M 119 33 L 129 33 L 127 31 C 127 31 128 31 128 29 C 128 28 127 28 124 28 L 122 25 C 123 25 123 22 122 22 L 119 22 L 114 16 C 113 15 110 16 110 17 Z" />
+			<path class="tailL" transform="translate(75 75) scale(0.25 0.25)" fill="green"
+				d="M 99 45 C 99 46 100 46 101 45 L 105 40 L 99 39 Z" />
+			<path class="wingL" transform="translate(75 75) scale(0.25 0.25)" fill="green"
+				d="M 119 41 L 110 57 C 110 58 113 59 114 58 L 119 52 L 122 52 C 123 52 123 49 122 49 L 124 46 C 127 46 128 46 128 45 C 128 43 127 43 127 43 L 129 41 Z" />
+		</g>
+		<g id="ms">
+			<path transform="translate(87.5 87.5) scale(0.125 0.125)" fill="rgba(255,255,255,0.4)"
+				d="M 100 30 A 1 1 90 0 0 100 161 A 1 1 90 0 1 100 44 Z" />
+			<path class="plane" transform="translate(87.5 87.5) scale(0.125 0.125)" fill="lightgray"
+				d="M 97 37 C 98 39 100 38 103 39 C 108 40 136 41 141 40 C 143 39 144 38 144 37 C 144 36 143 35 141 34 C 136 33 108 34 103 35 C 100 36 98 35 97 37 Z" />
+			<path class="tailR" transform="translate(87.5 87.5) scale(0.125 0.125)" fill="#000"
+				d="M 99 35 L 105 34 L 101 29 C 100 28 99 28 99 29 Z" />
+			<path class="wingR" transform="translate(87.5 87.5) scale(0.125 0.125)" fill="#000"
+				d="M 119 33 L 129 33 L 127 31 C 127 31 128 31 128 29 C 128 28 127 28 124 28 L 122 25 C 123 25 123 22 122 22 L 119 22 L 114 16 C 113 15 110 16 110 17 Z" />
+			<path class="tailL" transform="translate(87.5 87.5) scale(0.125 0.125)" fill="#000"
+				d="M 99 45 C 99 46 100 46 101 45 L 105 40 L 99 39 Z" />
+			<path class="wingL" transform="translate(87.5 87.5) scale(0.125 0.125)" fill="#000"
+				d="M 119 41 L 110 57 C 110 58 113 59 114 58 L 119 52 L 122 52 C 123 52 123 49 122 49 L 124 46 C 127 46 128 46 128 45 C 128 43 127 43 127 43 L 129 41 Z" />
+		</g>
+	</svg>
+	<script src="./script.js"></script>
+
+</body>
+
+</html>
